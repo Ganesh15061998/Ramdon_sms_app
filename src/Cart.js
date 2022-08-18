@@ -1,12 +1,19 @@
 
 import React from "react";
 import './Cart.css'
+// import Connect from './Connect'
 
 
 import {useState, useEffect} from 'react'
 
 function Cart(){
+  
+
   const [user, setUser]= useState([])
+  // const [connect,  setConnect] = useState(0)
+  // const massege =()=>{
+  //      setConnect( connect+1)
+  // }
 
    const fetchData = () =>{
     fetch("https://randomuser.me/api/?nat=us&results=20&page=1")
@@ -23,13 +30,19 @@ function Cart(){
     fetchData()
    },[])
 
+   
+
   return(
    <div className="products">
+ 
+    
+        
       
         {user.map((data)=>(
           <div key={data.id.value}
           className='cart'>
 
+             
              <div >
               <img className="product-image" src={data.picture.large}/>
              </div>
@@ -43,7 +56,12 @@ function Cart(){
              </div>
 
              <div className='city'>
-              <span >{data.location.country}</span>
+              <span >{data.location.state}</span>
+             </div>
+
+             <div>
+             <a href='/Connect' className="product-add-buttin"> CONNECT</a>
+              
              </div>
              
               

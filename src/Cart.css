@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: orange;
+    background-color: rgb(117, 108, 210);
     border-radius: 5px;
 }
 
@@ -31,45 +31,49 @@
 
 .product-price{
     margin-left: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     font-size: 20px;
     line-height: 30px;
-    font-weight:bold;
+    
     
 }
 .product-name{
     margin-left: 20px;
+    font-weight:bold;
+    font-size: 20px;
 }
 
 .city{
+     margin: 1px auto;
      margin-left: 20px;
     padding-bottom: 0px;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 30px; 
     
      
 }
 
-.product-add-button{
+.product-add-buttin{
     font-weight: 1000;
     font-size: 14px;
+    text-align: center;
     border-radius: 5px;
     border: none;
     outline: none;
-    background-color:rgb(15, 132, 48);
+    background-color:rgb(66, 46, 46);
     color:white;
     height: 30px;
+    width: 200px;
     display:block;
     cursor: pointer;
     text-transform: uppercase;
-    margin: 15px auto;
+    margin: 1px auto;
 }
 
-.product-add-button:hover{
+.product-add-buttin:hover{
     background-color: red;
 
 }
-.product-add-button:active{
+.product-add-buttin:active{
     transform:translateY(2px)
 }
-
