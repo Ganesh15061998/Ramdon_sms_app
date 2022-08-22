@@ -3,7 +3,9 @@ import React from 'react'
 import Cart from './Cart'
 import Connect from './Connect'
 import Navbar  from './Navbar';
+import About from './About'
 // import { useState } from 'react'
+import Help from './Help'
  
 import {
   BrowserRouter,
@@ -23,7 +25,8 @@ return (
   <BrowserRouter>
     
     <Routes>
-    {/* <Route path = '/navbar' element={<Navbar />}/> */}
+    <Route path = '/help' element={<Help />}/>
+    <Route path = '/about' element={<About />}/>
       <Route path="/" element={<Cart />} />
       <Route path="/Connect" element={<Connect />} />
       

@@ -23,6 +23,7 @@ const Connect = () => {
 
 
       <div className="send">
+        <p className='top'>UserName-(online)</p>
          <h1>{sms}</h1>
       </div>
    

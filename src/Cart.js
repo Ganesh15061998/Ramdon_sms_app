@@ -3,7 +3,6 @@ import React from "react";
 import './Cart.css'
 // import Connect from './Connect'
 
-
 import {useState, useEffect} from 'react'
 
 function Cart(){
